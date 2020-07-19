@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>ShowNewsServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.ShowNewsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowNewsServlet</servlet-name>
+    <url-pattern>/ShowNewsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ShowInformServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.ShowInformServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowInformServlet</servlet-name>
+    <url-pattern>/ShowInformServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ShowUserServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.ShowUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowUserServlet</servlet-name>
+    <url-pattern>/ShowUserServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SaveWordServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.SaveWordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SaveWordServlet</servlet-name>
+    <url-pattern>/SaveWordServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>TransWordServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.TransWordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TransWordServlet</servlet-name>
+    <url-pattern>/TransWordServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>BothSelectServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.BothSelectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BothSelectServlet</servlet-name>
+    <url-pattern>/BothSelectServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SelectUserServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.SelectUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectUserServlet</servlet-name>
+    <url-pattern>/SelectUserServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SelectUserIdServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.SelectUserIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectUserIdServlet</servlet-name>
+    <url-pattern>/SelectUserIdServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>RegistUserServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.RegistUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistUserServlet</servlet-name>
+    <url-pattern>/RegistUserServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.UpdateUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <url-pattern>/UpdateUserServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdatePwdServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.UpdatePwdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdatePwdServlet</servlet-name>
+    <url-pattern>/UpdatePwdServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EchoStatusServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.EchoStatusServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EchoStatusServlet</servlet-name>
+    <url-pattern>/EchoStatusServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>VerifycodeServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.VerifycodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VerifycodeServlet</servlet-name>
+    <url-pattern>/VerifycodeServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateNewsServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.UpdateNewsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateNewsServlet</servlet-name>
+    <url-pattern>/UpdateNewsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateInformServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.UpdateInformServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateInformServlet</servlet-name>
+    <url-pattern>/UpdateInformServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddNewsServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.AddNewsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddNewsServlet</servlet-name>
+    <url-pattern>/AddNewsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddInformServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.AddInformServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddInformServlet</servlet-name>
+    <url-pattern>/AddInformServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteNewsServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.DeleteNewsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteNewsServlet</servlet-name>
+    <url-pattern>/DeleteNewsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteInformServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.DeleteInformServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteInformServlet</servlet-name>
+    <url-pattern>/DeleteInformServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UserExitServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.UserExitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserExitServlet</servlet-name>
+    <url-pattern>/UserExitServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ShowNavFatherServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.ShowNavFatherServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowNavFatherServlet</servlet-name>
+    <url-pattern>/ShowNavFatherServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ShowNavSonServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.ShowNavSonServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowNavSonServlet</servlet-name>
+    <url-pattern>/ShowNavSonServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>FileUp2Servlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.FileUp2Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FileUp2Servlet</servlet-name>
+    <url-pattern>/FileUp2Servlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SelectNavNameServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.SelectNavNameServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectNavNameServlet</servlet-name>
+    <url-pattern>/SelectNavNameServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdataNFatherServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.UpdataNFatherServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdataNFatherServlet</servlet-name>
+    <url-pattern>/UpdataNFatherServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateNSonServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.UpdateNSonServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateNSonServlet</servlet-name>
+    <url-pattern>/UpdateNSonServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddNavFatherServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.AddNavFatherServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddNavFatherServlet</servlet-name>
+    <url-pattern>/AddNavFatherServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddNavSonServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.AddNavSonServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddNavSonServlet</servlet-name>
+    <url-pattern>/AddNavSonServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteNavServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.DeleteNavServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteNavServlet</servlet-name>
+    <url-pattern>/DeleteNavServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SavePicServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.SavePicServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SavePicServlet</servlet-name>
+    <url-pattern>/SavePicServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SelectAdminServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.SelectAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectAdminServlet</servlet-name>
+    <url-pattern>/SelectAdminServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SelectWaiterServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.SelectWaiterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectWaiterServlet</servlet-name>
+    <url-pattern>/SelectWaiterServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteAdminServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.DeleteAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteAdminServlet</servlet-name>
+    <url-pattern>/DeleteAdminServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddAdminServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.AddAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddAdminServlet</servlet-name>
+    <url-pattern>/AddAdminServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteWaiterServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.DeleteWaiterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteWaiterServlet</servlet-name>
+    <url-pattern>/DeleteWaiterServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SelectSortsServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.SelectSortsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectSortsServlet</servlet-name>
+    <url-pattern>/SelectSortsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SelectSNewsServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.SelectSNewsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectSNewsServlet</servlet-name>
+    <url-pattern>/SelectSNewsServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SelectSortIdServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.SelectSortIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectSortIdServlet</servlet-name>
+    <url-pattern>/SelectSortIdServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateSortServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.UpdateSortServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateSortServlet</servlet-name>
+    <url-pattern>/UpdateSortServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteSortServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.DeleteSortServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteSortServlet</servlet-name>
+    <url-pattern>/DeleteSortServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddSortServlet</servlet-name>
+    <servlet-class>com.hengzhi.controller.AddSortServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddSortServlet</servlet-name>
+    <url-pattern>/AddSortServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

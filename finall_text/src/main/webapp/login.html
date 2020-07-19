@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<title>东北师范大学党委学生部（处）登录</title>
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- 可选的 Bootstrap 主题文件 -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- Bootstrap 核心 JavaScript 文件 -->
+	</head>
+
+	<body>
+		<div class="bg">
+			<img src="img/bg3.jpg">
+		</div>
+		<div class="head">
+
+			<div class="item1">
+				东师官网<i>|</i> 校友
+				<i>|</i> 考生
+				<i>|</i> 招聘
+				<i>|</i> 捐赠
+			</div>
+			<div class="item2">
+				融合门户<i>|</i> 服务大厅
+				<i>|</i> 邮箱
+				<i>|</i> VPN
+			</div>
+
+		</div>
+		<div id="picture">
+			<img src="img/东北师范大学.png">
+		</div>
+		<div id="login">
+
+			<form id="form" name="form">
+				<input type="text" id="username" placeholder="用户名：1~15位字母或数字">
+				<div id="hintname"></div>
+				<input type="password" id="password" placeholder="密码：2~14位字母或数字">
+				<span id="look" class="glyphicon-eye-open glyphicon" style="display: inline-block;"></span>
+				<div id="hintpwd"></div>
+				<input type="text" name="verifycode" placeholder="验证码" id="verify" />
+				<div class="picture2">
+					<img src="VerifycodeServlet?Vname=logincode' />" border='2' id='oImg' onclick="change()" />
+				</div>
+				<div class="option">
+					<div class="return">
+						<a href="index.html">返回首页</a>
+					</div>
+					<div class="register">
+						<a href="register.html">注册</a>
+					</div>
+				</div>
+
+				<button type="submit" id="loginok">登录</button>
+			</form>
+		</div>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+	</body>
+
+</html>

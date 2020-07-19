@@ -1,0 +1,345 @@
+body {
+	background: url(../img/bkc.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 0;
+}
+
+.header {
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow: auto;
+}
+
+.logo {
+	float: left;
+	margin: 1% 2%;
+}
+#father{
+	color:black;
+}
+
+
+.xiang {
+	margin: 2%;
+	padding: 1%;
+	float: right;
+	border: 1px solid white;
+}
+
+a:link {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+
+.middle {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.boxi {
+	text-align: center;
+	width: 35%;
+	margin: 0 auto;
+	height: 10%;
+}
+
+.head {
+	padding-top: 18%;
+	padding-bottom: 5%;
+	text-align: center;
+	color: white;
+}
+
+.boxi img {
+	vertical-align: middle;
+	width: 100%;
+	border-radius: 25px;
+	border: 1px solid white;
+	margin: 2% auto;
+	height: 100%;
+}
+
+.bg {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 2% 0 0 0;
+	height: 99%;
+}
+
+.boxz {
+	color: white;
+}
+
+h2 {
+	font-size: 160%;
+	font-weight: 500;
+	margin: 0;
+	margin-bottom: 2%;
+}
+
+.main .index {
+	background: url(../img/bk11.jpg) no-repeat;
+	background-size: 100% 100%;
+	flex: 1;
+}
+
+.menu {
+	margin: 15% 0 0 0;
+}
+
+.menu button {
+	padding: 4% 0;
+	color: white;
+	font-size: 120%;
+	width: 100%;
+	/*border-top: 1px solid white;*/
+	border: 0;
+	border-bottom: 1px solid white;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.menu button:hover {
+	background: rgba(255, 255, 255, 0);
+	color: rgb(55, 171, 219);
+}
+
+.menu img {
+	margin-left: 3%;
+	width: 3%;
+}
+
+
+/*菜单样式*/
+
+.main {
+	/*background: rgb(255, 255, 255, 0.8);*/
+	display: flex;
+	flex-direction: row;
+	display: -webkit-flex;
+	flex-wrap: nowrap;
+	width: 100%;
+}
+
+.main .content {
+	flex: 2;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	overflow: hidden;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.navs {
+	padding: 0 10%;
+}
+
+input,
+select {
+	margin: 1% auto;
+	background-color: white;
+	border: 0;
+	border-radius: 5px;
+	width: 25%;
+	height: 25px;
+}
+#father{
+	margin-top: 1%;
+}
+option{
+	color: black;
+}
+#userage,
+#userinfo {
+	margin-left: 1%;
+	margin-top: 2%;
+}
+
+#changesonok,
+#changefaok,
+#addfaok,
+#addsonok {
+	border: 0;
+	border-radius: 5px;
+	padding: 1% 2%;
+	background-color: white;
+	font-size: 110%;
+	font-weight: 600;
+	cursor: pointer;
+	margin: 2%;
+	box-shadow: 1px 1px 1px #777;
+	color: black;
+}
+
+#name,
+#age {
+	white-space: nowrap;
+}
+
+.addfather,
+.addson {
+	margin-top: 20%;
+	text-align: center;
+	color: white;
+	margin-right: 30%;
+	margin-left: 10%;
+	width: 80%;
+}
+
+.changefa,
+.changeson {
+	margin-top: 10%;
+	text-align: center;
+	color: white;
+	margin-right: 20%;
+	width: 80%;
+}
+
+#add {
+	margin-bottom: 10%;
+}
+
+.addfather input,
+.addson input,
+.changefa input,
+.changeson input {
+	margin: 1% 0 1% 0;
+}
+
+.container ul:hover .line {
+	width: 446px;
+}
+
+.container ul .line {
+	position: absolute;
+	bottom: 12px;
+	width: 0;
+	left: 15px;
+	background-color: #e4ecef;
+	transition: all 0.3s ease-out 0s;
+	height: 4px;
+}
+
+.head img {
+	height: 40%;
+	width: 100%;
+}
+
+.stair {
+	font-size: 200%;
+	padding: 5% 6% 1% 6%;
+	display: block;
+}
+
+.secondary {
+	padding: 1%;
+	margin-bottom: 3%;
+	text-align: center;
+}
+
+.item {
+	display: inline-block;
+	padding: 1%;
+	margin: 2%;
+	font-size: 120%;
+	text-align: center;
+	width: 40%;
+}
+
+.item img {
+	width: 20%;
+	margin-right: 1%;
+	padding-right: 4%;
+	transition: all 0.3s ease-out 0s;
+}
+
+.item:hover img {
+	padding-right: 0;
+}
+
+.item a:link {
+	color: white;
+}
+
+.stair a:hover,
+.item a:hover {
+	text-decoration: none;
+}
+
+.item a:visited {
+	color: white;
+}
+
+ul {
+	list-style: none;
+}
+li.item:hover{
+	box-shadow: 16px 0px 0px 0px #61bbdd;
+}
+
+li {
+	list-style: none;
+}
+
+#changefa,
+#deletefa {
+	font-size: 60%;
+	display: inline-block;
+	margin: 2%;
+	color: white;
+	cursor: pointer;
+}
+
+#changeson,
+#deleteson {
+	font-size: 80%;
+	display: inline-block;
+	margin: 3%;
+	color: white;
+	cursor: pointer;
+}
+
+#changeson {
+	margin-left: 10%;
+}
+
+.table {
+	position: absolute;
+	top: 18%;
+	left: 75%;
+	width: 20%;
+}
+
+table {
+	text-align: center;
+	color: white;
+	width: 20%;
+	border-color: white;
+	font-size: 110%;
+}
+
+td {
+	border: 1px solid white;
+	padding: 2%;
+}
+
+#changefalink,
+#changefaname,
+#changesonlink,
+#changesonname {
+	color: #000000;
+}
+
+#addname1,
+#addname2,
+#addlink1,
+#addlink2 {
+	color: #000000;
+}

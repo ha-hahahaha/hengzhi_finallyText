@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户界面</title>
+		<link rel="stylesheet" href="css/user.css" />
+	</head>
+
+	<body>
+		<div class="main">
+			<div class="index">
+				<div class="bg">
+					<div class="head">
+						<div class="boxi">
+						</div>
+						<p></p>
+						<h2 id="nameA"></h2>
+						<div class="info">
+							<p id="age"></p>
+							<p id="manager">前往管理界面</p>
+						</div>
+					</div>
+					<div class="menu">
+						<button id="showinfo">显示信息
+							<img src="img/jiantou (1).png">
+						</button>
+						<button id="changeinfo">修改信息
+							<img src="img/jiantou (1).png">
+						</button>
+						<button id="changepwd">修改密码
+							<img src="img/jiantou (1).png">
+						</button>
+						<button id="return">退出登录
+					    	 <img src="img/jiantou (1).png">
+					    </button>
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="header">
+					<div class="logo">
+						<img src="img/L1.png">
+					</div>
+					<div class="xiang">
+						<a href="index.html">返回首页</a>
+					</div>
+					<div class="xiang">
+						<a href="news.html">校园新闻</a>
+					</div>
+					<div class="xiang">
+						<a href="inform.html">通知公告</a>
+					</div>
+					<div class="xiang">
+						<a href="nav.html">本站导航</a>
+					</div>
+				</div>
+				<div class="show">
+					<h2>个人信息</h2>
+					<h3 id="nameS"></h3>
+					<p id="id"></p>
+					<p id="ageS"></p>
+					<p id="info"></p>
+					<form action="FileUp2Servlet" method="post" enctype="multipart/form-data">
+						修改头像：<input type="file" name="file1" id="file">
+						<input type="submit" value="上传文件" id="upload">
+
+					</form>
+				</div>
+				<div class="changein">
+					<h2>修改个人信息</h2> 用户名：
+					<input type="text" id="username">
+					<div id="hintname"></div><br/> 年龄： <input type="text" id="userage">
+					<div id="hintage"></div><br/> 爱好： <input type="text" id="userinfo">
+					<div id="hintinfo"></div><br/>
+					<button id="changeok">确认修改</button>
+				</div>
+				<div class="changepassword">
+					<h2>修改密码</h2> 原有密码：
+					<input type="text" id="pwdpast">
+					<div id="hintinfo"></div><br/> 现改密码：
+					<input type="text" id="pwdnow">
+					<div id="hintpwd"></div><br/>
+
+					<button id="changeok2">确认修改</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/user.js"></script>
+	</body>
+
+</html>

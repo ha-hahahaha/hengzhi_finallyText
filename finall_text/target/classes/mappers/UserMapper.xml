@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper:根标签，namespace：命名空间，随便写，一般保证命名空间唯一 -->
+<!--连接mapper接口-->
+<mapper namespace="com.hengzhi.dao.UserMapper">
+    <!--显示所有用户按id排序    -->
+    <select id="selectAllUsers" resultType="com.hengzhi.entity.User" >
+        select * from tbl_users
+    </select>
+
+    <select id="checkUser" resultType="com.hengzhi.entity.User" >
+        select * from tbl_users Where username = #{username} and password =#{password}
+    </select>
+
+    <select id="checkUserId" resultType="com.hengzhi.entity.User" >
+        select * from tbl_users Where userId = #{userId}
+    </select>
+
+    <select id="checkUserName" resultType="com.hengzhi.entity.User" >
+        SELECT
+            username
+        FROM
+            ( SELECT username AS username FROM tbl_users WHERE username = #{username}
+            UNION
+            SELECT waitUsername AS username FROM tbl_wait WHERE waitUsername = #{username}
+            )
+        AS alldate
+    </select>
+
+    <insert id="insertUser">
+        insert into tbl_users(username,password,ifAdmin) values(#{username},#{password},#{ifAdmin})
+    </insert>
+
+    <update id="updateUser">
+        update tbl_users set username = #{userName},age = #{age},information = #{info}
+        where  userId = #{userId}
+    </update>
+
+    <update id="updatePwd">
+        update tbl_users set password = #{pwdNow}
+        where  username = #{userName}
+    </update>
+
+    <update id="savePic">
+        update tbl_users set image = #{picLink}
+        where  userId = #{userId}
+    </update>
+
+    <select id="selectAdmin" resultType="com.hengzhi.entity.User" >
+        select * from tbl_users where ifAdmin=1;
+    </select>
+
+    <delete id="deleteAdmin">
+        DELETE FROM tbl_users WHERE username=#{userName}
+    </delete>
+
+</mapper>

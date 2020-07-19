@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper:根标签，namespace：命名空间，随便写，一般保证命名空间唯一 -->
+<!--连接mapper接口-->
+<mapper namespace="com.hengzhi.dao.WaiterMapper">
+    <insert id="insertWaiter">
+        insert into tbl_wait(waitUsername,waitUserpwd) values(#{username},#{password})
+    </insert>
+
+    <select id="selectWaiter" resultType="com.hengzhi.entity.Waiter" >
+        select * from tbl_wait
+    </select>
+
+    <select id="selectWaiterName" resultType="com.hengzhi.entity.Waiter" >
+        select * from tbl_wait where waitUsername=#{waiterName}
+    </select>
+
+    <delete id="deleteWaiter">
+        DELETE FROM tbl_wait WHERE waitUsername=#{waiterName}
+    </delete>
+</mapper>

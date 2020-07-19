@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>管理通告</title>
+		<link rel="stylesheet" href="css/adnews.css" />
+	</head>
+	<body>
+		
+		<div class="main">
+			<div class="index">
+				<div class="bg">
+					<div class="head">
+						<div class="boxi">
+						</div>
+<!--						<h2 id="name">用户名：</h2>-->
+						<!--<div class="info">
+							<p id="age">年龄：</p>
+							<p id="info">信息：</p>
+						</div>-->
+					</div>
+					<div class="menu">
+						<button id="news">通告显示
+										<img src="img/jiantou (1).png">
+						</button>
+						<button id="add">添加通告
+										<img src="img/jiantou (1).png">
+						</button>
+						<button id="return">返回管理
+					    	 <img src="img/jiantou (1).png">
+					    </button>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="header">
+					<div class="logo">
+						<img src="img/L1.png">
+					</div>
+					<div class="xiang">
+						<a href="index.html">返回首页</a>
+					</div>
+					<div class="xiang">
+						<a href="news.html">校园新闻</a>
+					</div>
+					<div class="xiang">
+						<a href="inform.html">通知公告</a>
+					</div>
+					<div class="xiang">
+						<a href="nav.html">本站导航</a>
+					</div>
+				</div>
+				<div class="news">
+					<table id="table1" cellspacing="0">
+						<tbody>
+
+						</tbody>
+					</table>
+					<hr>
+					<div class="buttons">
+						<button id="bt0" class="btn">首页</button>
+						<button id="bt1" class="btn">上一页</button>
+						<button id="bt2" class="btn">下一页</button>
+						<button id="bt3" class="btn">尾页</button> 当前第
+						<span id="page" class="pageNum"></span>页 共
+						<span id="pageSize" class="pageNum"></span>页 共
+						<span id="total" class="pageNum"></span>条数据 到第
+						<input type="text" id="number" /> 页
+						<button id="pageNumber" class="btn">确定</button>
+					</div>
+				</div>
+				<div class="text">
+					
+				</div>
+				<div class="add">
+					标题：<input type="text" id="addtitle"><br/>
+					作者：<input type="text" id="addanthor" /><br/>
+					正文：<textarea id="addtext" rows="15" cols="50"></textarea><br/>
+					<button id="addok">确认添加</button>
+				</div>
+				<div class="change">
+					标题：<input type="text" id="changetitle"><br/> 
+					作者：<input type="text" id="changeanthor" /><br/>
+					正文：<textarea id="changetext" rows="15" cols="80"></textarea><br/>
+					<button id="changeok">确认修改</button>
+				</div> 
+			</div>
+		</div>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/adinform.js"></script>
+	</body>
+</html>

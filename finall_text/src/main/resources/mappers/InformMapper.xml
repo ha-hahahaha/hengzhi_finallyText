@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper:根标签，namespace：命名空间，随便写，一般保证命名空间唯一 -->
+<!--连接mapper接口-->
+<mapper namespace="com.hengzhi.dao.InformMapper">
+    <!--显示所有用户按id排序    -->
+    <select id="selectAllInform" resultType="com.hengzhi.entity.Inform" >
+    select * from tbl_inform
+     <where>
+        title LIKE CONCAT('%', #{keyword},'%')
+    </where>
+    ORDER BY writeTime DESC
+    </select>
+
+    <update id="updateInform">
+        update tbl_inform set title=#{newTitle},author=#{newAuthor},content=#{newContent},alterTime=#{newTime}
+        where  informId = #{newsId}
+    </update>
+
+    <insert id="insertInform">
+        insert into tbl_inform(title,author,content,writeTime,alterTime) values(#{newTitle},#{newAuthor},#{newContent},#{newTime},#{newTime})
+    </insert>
+
+    <delete id="deleteInform">
+        DELETE FROM tbl_inform WHERE title = #{title}
+    </delete>
+</mapper>

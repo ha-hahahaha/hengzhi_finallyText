@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="finall_text:war">
+    <output-path>$PROJECT_DIR$/finall_text/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>finall_text</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="finall_text.war">
+      <element id="artifact" artifact-name="finall_text:war exploded" />
+    </root>
+  </artifact>
+</component>

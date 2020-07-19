@@ -1,0 +1,541 @@
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	height: 100%;
+	position: relative;
+	height: auto !important;
+	min-height: 100%;
+}
+
+.header {
+	background: url(../img/list_banner.jpg) no-repeat;
+	background-size: 100% 100%;
+	padding-top: 13%;
+}
+
+.menu {
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	position: relative;
+	width: 100%;
+	list-style: none;
+	z-index: 40;
+	display: inline-block;
+	margin-bottom: -5.5px;
+	color: white;
+	padding-right: 3%;
+}
+
+.logo {
+	float: left;
+	margin-left: 1%;
+}
+
+.xiang {
+	float: right;
+	padding: 1% 1%;
+	font-size: 110%;
+	margin-top: 2%;
+	width: 8%;
+	text-align: center;
+}
+
+.xiang:hover {
+	background-color: #fcfcfc;
+	color: #000000;
+}
+
+
+/*菜单*/
+
+.xuanmenu {
+	background: url(../img/main.jpg) no-repeat;
+	background-size: 100% 200%;
+	position: absolute;
+	top: 100%;
+	width: 61.2%;
+	right: 2.9%;
+	display: none;
+	z-index: 50;
+	color: black;
+	box-shadow: 2px 2px 2px #777;
+	border-bottom: 2px solid #3eb3d0;
+	font-weight: bold;
+}
+
+.xuanmenu a:link {
+	text-decoration: none;
+	color: black;
+}
+
+.xiang:hover a {
+	color: #000000;
+}
+
+.xiang a:visited {
+	color: white;
+}
+
+
+/*悬浮菜单*/
+
+.sort,
+.sort2,
+.sort1,
+.sort3 {
+	position: absolute;
+	display: none;
+	z-index: 60;
+	left: 29.9%;
+	top: 21.5%;
+	background-color: #35abd2a8;
+	padding-top: 0;
+	width: 68%;
+	text-align: center;
+}
+
+.sort {
+	width: 37.8%;
+	left: 45%;
+	padding: 1%;
+}
+
+.sort li,
+.sort2 li,
+.sort1 li,
+.sort3 li {
+	color: white;
+	margin: 1%;
+	padding: 0;
+}
+
+.sort ul,
+.sort2 ul,
+.sort1 ul,
+.sort3 ul {
+	margin: 0;
+	padding: 0;
+}
+
+.xiang li:hover {
+	background-color: #35abd2a8;
+}
+
+.xuanmenu li {
+	line-height: 24px;
+	font-size: 16px;
+	padding: 1% 1% 0.6% 1%;
+}
+
+.xuanmenu li:hover .sort {
+	display: block;
+}
+
+.xuanmenu li:hover .sort2 {
+	display: block;
+}
+
+.xuanmenu li:hover .sort1 {
+	display: block;
+}
+
+.xuanmenu li:hover .sort3 {
+	display: block;
+}
+
+.sort:hover,
+.sort2:hover,
+.sort1:hover,
+.sort3:hover {
+	display: block;
+}
+
+.xuanmenu img {
+	float: left;
+	width: 200px;
+	height: 120px;
+	margin: 2% 0 4% 2%;
+}
+
+.xiang:hover .xuanmenu {
+	display: block;
+}
+
+.xuanmenu:hover {
+	display: block;
+}
+
+#sort ul {
+	list-style: none;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	transition: all 0.6s ease-out 0s;
+	padding: 0 0 2% 0;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
+
+.right {
+	position: fixed;
+	top: 37%;
+	width: 20%;
+	left: 0;
+}
+
+.right li {
+	transition: all 0.3s ease-out;
+	box-shadow: 2px 2px 4px #888;
+	width: 70%;
+	display: block;
+	background: rgba(0, 0, 0, 0.6) url(../img/border.png) no-repeat;
+	background-size: 20% 100%;
+	color: white;
+	padding: 5% 12% 5% 0;
+	margin-bottom: 4%;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.big {
+	font-size: 100%;
+}
+
+.right li img {
+	width: 12%;
+	margin: 0 6% 1% 2%;
+	padding-left: 3%;
+	vertical-align: bottom;
+}
+
+.right li:hover {
+	background: #ebebeb url(../img/border.png) no-repeat;
+	color: #67a5cd;
+	padding: 5% 13% 5% 13%;
+}
+
+h2 {
+	font-size: 200%;
+	font-family: "楷体";
+	margin-bottom: 12%;
+}
+
+.right ul {
+	width: 100%;
+	padding: 10% 0 15% 0;
+	background: url(../img/shad2.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+#sort {
+	width: 74%;
+	margin: 3% 8% 10% 18%;
+	padding: 3% 0 1% 1%;
+}
+
+.bread {
+	text-align: right;
+	float: right;
+	width: 75%;
+	font-size: 90%;
+	padding: 1% 0 1% 2%;
+	border-bottom: 1px solid #ededed;
+	margin-right: 5%;
+}
+
+.bread img {
+	width: 2%;
+	vertical-align: bottom;
+}
+
+.topic {
+	background-color: #f2f1f1;
+	margin: 2% 0 2% 0;
+	padding: 1% 2% 1% 2%;
+	font-size: 140%;
+}
+
+.search {
+	width: 100%;
+	padding-bottom: 1%;
+	margin-top: 2%;
+}
+
+
+/*搜索区*/
+
+.search input[type="text"] {
+	padding: 3px;
+	outline: none;
+	color: #B6B2AE;
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	width: 91%;
+	height: 30px;
+	line-height: 1em;
+	font-size: 13px;
+	border-radius: 7px 0 0 7px;
+}
+
+
+/*搜索框*/
+
+.search input[type="submit"] {
+	background: url('../img/search.png') no-repeat 19px 8px rgba(0, 0, 0, 0.4);
+	padding: 11.2px 32px;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	outline: none;
+	border-radius: 0 7px 7px 0;
+}
+
+
+/*搜索按钮*/
+
+.search input[type="submit"]:hover {
+	background: url('../img/search.png') no-repeat 20px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+/*变色*/
+
+.footer {
+	background: url(../img/pedro-lastra-Nyvq2juw4_o-unsplash.jpg) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	width: 100%;
+}
+
+.di {
+	background: rgba(1, 0, 2, 0.54);
+	overflow: auto;
+	padding: 0;
+	width: 100%;
+}
+
+.di img {
+	width: 20%;
+	vertical-align: bottom;
+	float: left;
+	margin-right: 5%;
+	margin-left: 2%;
+}
+
+.ban {
+	margin: 1% 2% 0 15%;
+	padding: 1%;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 90%;
+}
+
+a:link {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: #67a5cd;
+}
+
+.bread a:link {
+	text-decoration: none;
+	color: black;
+}
+
+.bread a:visited {
+	color: #000000;
+}
+
+.right a:visited {
+	color: white;
+}
+
+.close {
+	text-align: center;
+	box-shadow: 2px 2px 2px #777;
+	width: 10%;
+	margin: 2% auto;
+	padding: 1%;
+	border-radius: 8px;
+	border: 1px solid #777;
+	cursor: pointer;
+	color: #000000;
+}
+
+#sort a:link {
+	color: #000000;
+}
+
+
+
+.web,
+.section,
+.team,
+.think,
+.soul,
+.daily {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	transition: all 0.6s ease-out 0s;
+}
+
+.container ul:hover .line {
+	width: 446px;
+}
+
+.container ul .line {
+	position: absolute;
+	bottom: 12px;
+	width: 0;
+	left: 15px;
+	background-color: #e4ecef;
+	transition: all 0.3s ease-out 0s;
+	height: 4px;
+}
+
+.head img {
+	height: 40%;
+	width: 100%;
+}
+
+.stair {
+	font-size: 200%;
+	padding: 5% 6% 1% 6%;
+	display: block;
+	cursor: pointer;
+}
+
+.secondary {
+	padding: 1%;
+	margin-bottom: 3%;
+	text-align: center;
+}
+
+.item {
+	display: inline-block;
+	padding: 1%;
+	margin: 2%;
+	font-size: 120%;
+	text-align: center;
+}
+
+.item img {
+	width: 20%;
+	margin-right: 1%;
+	padding-right: 4%;
+	transition: all 0.3s ease-out 0s;
+}
+
+.item:hover img {
+	padding-right: 0;
+}
+
+.item a:link {
+	color: #000000;
+}
+
+.stair a:hover,
+.item a:hover {
+	text-decoration: none;
+}
+
+.item a:visited {
+	color: #000000;
+}
+.btn {
+	line-height: 24px;
+	border-width: 0px;
+	border-radius: 3px;
+	background: #3eb3d0;
+	cursor: pointer;
+	outline: none;
+	font-family: Microsoft YaHei;
+	color: white;
+	font-size: 13px;
+}
+
+.btn:hover {
+	background: #5599FF;
+}
+
+.pageNum {
+	color: #0078D7
+}
+
+table {
+	border: 0;
+	width: 100%;
+	margin-bottom: 3%;
+}
+
+td {
+	border-bottom: 1px solid #ededed;
+	margin: 0;
+	margin-top: 3%;
+}
+
+#td1 {
+	width: 10%;
+	text-align: right;
+	margin-right: 2%;
+	padding: 2% 0 1% 0;
+}
+
+#td2 {
+	width: 80%;
+	padding: 2% 0 2% 6%;
+}
+
+#day {
+	font-size: 200%;
+	color: #3eb3d0;
+	font-weight: 700;
+}
+
+#month {
+	font-size: 90%;
+	color: #8c8c8c;
+	border-top: 2px solid #3eb3d0;
+	padding-top: 10%;
+}
+
+tr {
+	transition: all 0.3s;
+}
+
+tr:hover {
+	box-shadow: 2px 2px 2px 5px #ededed;
+}
+
+.buttons {
+	text-align: center;
+	margin: 2%;
+}
+
+.buttons input {
+	text-align: center;
+	width: 5%;
+}
+.show{
+	border-top: 1px solid #ededed;
+	width: 68%;
+	margin: 5% 8% 10% 5%;
+	margin-left: 23%;
+	box-shadow: 2px 2px 5px #ededed;
+	padding: 3% 2%;
+}
+#return{
+	cursor: pointer;
+	width: 15%;
+	border-radius: 15px;
+	background-color: white;
+	box-shadow: 1px 1px 2px #777;
+	margin: 1% auto;
+	padding: 1%;
+	text-align: center;
+	font-size: 120%;
+}

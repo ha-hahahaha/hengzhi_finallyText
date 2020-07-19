@@ -1,0 +1,197 @@
+body {
+	margin: 0;
+	overflow-x: hidden;
+}
+.head{
+	position: absolute;
+	top:0;
+	width: 100%;
+	left:0;
+	font-size: 110%;
+	text-align: center;
+	padding: 1%;
+	color: #def5fe;
+}
+.item1 {
+	float: left;
+}
+
+.item2 {
+	float: right;
+}
+
+i {
+	margin: 0 18px;
+	font-size: 14px;
+}
+.bg {
+	width: 100%;
+	height: 100%;
+}
+.bg img{
+	width: 100%;
+	height: 110%;
+}
+
+#login{
+	position: absolute;
+	top:35%;
+	left: 16%;
+	width: 38%;
+	text-align: center;
+	background-color: white;
+	padding: 2%;
+	border-right: 30px solid #61bbdd;
+}
+
+
+#picture{
+	position: absolute;
+	top:22%;
+	left: 16%;
+	width: 38%;
+	text-align: center;
+}
+form{
+	border-left: 2px solid #61bbdd;
+	padding-right: 2%;
+}
+input[type="text"],
+input[type="password"] {
+	width: 60%;
+	padding:1% 2%;
+	margin-top: 3%;
+}
+#username{
+	margin-top: 0;
+}
+input{
+	border:2px solid #61bbdd;
+}
+#password{
+	margin-left: 4%;
+}
+.register{
+	float: right;
+	margin-right: 2%;
+	font-size: 100%;
+	color: white;
+	transition: all 0.5s linear;
+}
+.option{
+	overflow: auto;
+	width: 60%;
+	margin: 2% auto;
+}
+.return{
+	float: left;
+	margin-left: 2%;
+	font-size: 100%;
+	color: #61bbdd;
+	padding: 0;
+}
+#pwd{
+	top:38px;
+	left: -80px;
+	display: inline-block;
+}
+#code2{
+	top:45px;
+	left: 10px;
+}
+#code1{
+	top:45px;
+	left: -8px;
+}
+#user{
+	top:2px;
+	left: -10px;
+}
+#loginok,#registerok{
+	margin: auto;
+	margin-top: 3%;
+	width: 60%;
+	text-align: center;
+	display: block;
+	border:0;
+	padding: 1%;
+	background-color:#61bbdd ;
+	color: white;
+	font-size: 110%;
+}
+a:link{
+	color:#61bbdd;
+	font-size: 120%;
+}
+a:hover{
+	color: #61bbdd;
+}
+a:visited{
+	color: #61bbdd;
+}
+#look{
+	top:0px;
+	left: -22px;
+	color: #61bbdd;
+}
+#hintname{
+	position:absolute;
+	width: 30%;
+	left: 73%;
+	top:13%;
+	color: #94070a;
+	font-weight: bold;
+	font-size: 110%;
+}
+#hintpwd{
+	position:absolute;
+	width: 30%;
+	left: 73%;
+	top:30%;
+	color: #94070a;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+#hint{
+	position:absolute;
+	width: 30%;
+	left: 73%;
+	top:37%;
+	color: #94070a;
+	font-weight: bold;
+	font-size: 110%;
+}
+#hintname2{
+	position:absolute;
+	width: 30%;
+	left: 72%;
+	top:10%;
+	color: #94070a;
+	font-weight: bold;
+	font-size: 110%;
+}
+#hintpwd2{
+	position:absolute;
+	width: 30%;
+	left: 72%;
+	top:22%;
+	color: #94070a;
+	font-weight: bold;
+	font-size: 110%;
+}
+.checkbox{
+	padding-left: 9%;
+	padding-top: 2%;
+}
+.picture2{
+	position:absolute;
+	width: 30%;
+	left: 72%;
+	top:49%;
+}
+.picture2 img{
+}
+.glyphicon-user, .glyphicon-lock,.glyphicon-barcode{
+	color: #61bbdd;
+}

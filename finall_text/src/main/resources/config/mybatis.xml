@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="db-config.properties">
+        <property name="driver" value="com.mysql.jdbc.Driver" />
+        <property name="username" value="root"/>
+        <property name="password" value="333"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/demo?serverTimezone=UTC&amp;useSSL=false&amp;characterEncoding=UTF-8"/>
+    </properties>
+
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+    </settings>
+
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor" />
+    </plugins>
+
+    <environments default="mydev">
+        <environment id="mydev">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+                <property name="poolMaximumActiveConnections" value="40" />
+                <property name="poolMaximumIdleConnections" value="40" />
+
+            </dataSource>
+        </environment>
+
+<!--        <environment id="online">-->
+<!--            <transactionManager type="JDBC"/>-->
+<!--            <dataSource type="POOLED">-->
+<!--                <property name="driver" value="com.mysql.jdbc.Driver"/>-->
+<!--                <property name="url" value="jdbc:mysql://localhost:3305/hengzhitext"/>-->
+<!--                <property name="username" value="root"/>-->
+<!--                <property name="password" value="333"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+    </environments>
+
+    <mappers>
+        <mapper resource="mappers/NewsMapper.xml"/>
+        <mapper resource="mappers/InformMapper.xml"/>
+        <mapper resource="mappers/UserMapper.xml"/>
+        <mapper resource="mappers/WaiterMapper.xml"/>
+        <mapper resource="mappers/NavMapper.xml"/>
+        <mapper resource="mappers/SortMapper.xml"/>
+    </mappers>
+</configuration>

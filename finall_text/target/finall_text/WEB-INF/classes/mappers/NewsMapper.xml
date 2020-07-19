@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper:根标签，namespace：命名空间，随便写，一般保证命名空间唯一 -->
+<!--连接mapper接口-->
+<mapper namespace="com.hengzhi.dao.NewsMapper">
+    <!--显示所有用户按id排序    -->
+    <select id="selectAllNews" resultType="com.hengzhi.entity.NewOne" >
+        select * from tbl_news
+        <where>
+            title LIKE CONCAT('%', #{keyword},'%')
+        </where>
+        ORDER BY writeTime DESC
+
+    </select>
+    <!--显示所有用户按id排序    -->
+    <select id="bothSelect" resultType="com.hengzhi.entity.NewOne" >
+        SELECT * FROM
+        (
+        SELECT title,author, content, writeTime, alterTime
+        FROM `tbl_news`
+            <where>
+            title LIKE CONCAT('%', #{keyword},'%')
+           </where>
+        UNION
+        SELECT title, author,content, writeTime ,alterTime
+        FROM `tbl_inform`
+            <where>
+                title LIKE CONCAT('%', #{keyword},'%')
+            </where>
+        )
+        AS alldate
+        ORDER BY writeTime DESC
+    </select>
+
+    <update id="updateNews">
+        update tbl_news set title=#{newTitle},author=#{newAuthor},content=#{newContent},alterTime=#{newTime}
+        where  NewsId = #{newsId}
+    </update>
+
+    <insert id="insertNews">
+        insert into tbl_news(title,author,content,writeTime,alterTime,sortId) values(#{newTitle},#{newAuthor},#{newContent},#{newTime},#{newTime},#{sortId})
+    </insert>
+
+    <delete id="deleteNews">
+        DELETE FROM tbl_news WHERE title = #{title}
+    </delete>
+
+    <select id="selectSortNews" resultType="com.hengzhi.entity.NewOne" >
+     select * from tbl_news
+       where sortId=#{sortId}
+
+    </select>
+
+</mapper>

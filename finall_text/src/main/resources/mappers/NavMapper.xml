@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper:根标签，namespace：命名空间，随便写，一般保证命名空间唯一 -->
+<!--连接mapper接口-->
+<mapper namespace="com.hengzhi.dao.NavMapper">
+   <select id="selectAllFather" resultType="com.hengzhi.entity.Nav">
+       SELECT * FROM tbl_nav WHERE ISNULL(fatherId) is TRUE
+   </select>
+
+    <select id="selectAllSon" resultType="com.hengzhi.entity.Nav">
+       SELECT * FROM tbl_nav WHERE fatherId = #{navId}
+   </select>
+
+    <select id="selectNavName" resultType="com.hengzhi.entity.Nav">
+       SELECT * FROM tbl_nav WHERE navName = #{navName}
+   </select>
+
+    <update id="updateNFather">
+        update tbl_nav set navName=#{navName},toLink=#{toLink}
+        where  nameId = #{navId}
+    </update>
+
+
+    <update id="updateNSon">
+        update tbl_nav set navName=#{navName},toLink=#{toLink},fatherId=#{fatherId}
+        where  nameId = #{navId}
+    </update>
+
+    <insert id="addNFather">
+        insert into tbl_nav(navName,toLink) values(#{navName},#{toLink})
+    </insert>
+
+    <insert id="addNSon">
+        insert into tbl_nav(navName,toLink,fatherId) values(#{navName},#{toLink},#{fatherId})
+    </insert>
+
+    <delete id="deleteNav">
+        DELETE FROM tbl_nav WHERE navName = #{navName}
+    </delete>
+
+    <select id="selectFatherName" resultType="com.hengzhi.entity.Nav">
+       SELECT * FROM tbl_nav WHERE navName = #{fatherName}
+   </select>
+</mapper>
